@@ -4,18 +4,18 @@ nav {
     background-color: #F25F5C;
   }
   
-  h1 {
+h1 {
     float: left;
     margin-top: 5px;
     color: white;
     font-size: 36px;
   }
   
-  ul {
+ul {
     float: right;
   }
   
-  li {
+li {
     display: inline-block;
     border-radius: 5px;
     margin-right: 25px;
@@ -23,7 +23,7 @@ nav {
     background-color: #28587B;
   }
   
-  a {
+a {
     display: inline-block;
     width: 150px;
     padding: 10px 0;
@@ -33,8 +33,15 @@ nav {
     text-shadow: 2px 2px 2px #929090;
 
   }
+p {
+  width: 40%;
+}
   
-  .clearfix:after {
+.aboutMe-container {
+    display: inline-flex;
+  }
+
+.clearfix:after {
      content: " ";
      visibility: hidden;
      display: block;
@@ -57,3 +64,21 @@ nav {
       font-size: 16px;
     }
   }
+
+#Skills{
+  display: block;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#Skills ul{
+  float: left;
+  text-align: left;
+  display: block;
+  justify-content: space-around;
+}
+
+#Skills ul li{
+  display: block;
+  justify-content: space-around;
+}
