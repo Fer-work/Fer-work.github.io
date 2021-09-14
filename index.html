@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <nav class="clearfix">
-    <h1>My Portfolio</h1>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="about-me">
-      <div class="about-me-container">
-        <div class="about-me-text-container">
-          <h2>About Me</h2>
+  <head>
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Resources/style.css">
+  </head>
+
+  <body>
+    <header> 
+      <h1>My Portfolio</h1> 
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+      
+    <main>
+      <h2 id="aboutMe">About Me</h2>
+      <section class="aboutMe-container">
+        <div class="bio-container">
           <p>
-            Hi! I'm Fernando, software and network engineer from Mexico. I completeted 
-            my k-12 education in California, USA. My university education is from a Mexican
-            university called UNITEC. 
+              Hi! I'm Fernando, software and network engineer from Mexico. I completeted 
+              my k-12 education in California, USA. My university education is from a Mexican
+              university called UNITEC. 
           </p>
           <p>
             I am hugely interested in all sorts of technology. Before changing career paths 
@@ -32,54 +35,83 @@
             In my free time I like to work on personal projects. There's a lot of business 
             ideas I would like to implement but I still have a ways to go. 
           </p>
-          <!-- <p>
-            Fun fact! I've been programing for
-            <span id="time-container">6,485,425,735</span> seconds!
-          </p> -->
         </div>
-        <img src="Resources\BeachOctopus.jpeg" alt="A photo of Fernando on the beach with an octopus torso" 
-        class="portrait" width="40%">
-      </div>
-    </section>
-    <section id="Education">
-      <h2>Education</h2>
-      <div class="University">
-        <h3>University</h3>
-        <div class="Unitec">
-          <h4>Universidad Tecnologica (UNITEC)</h4>
-          <p>This is the most recent formal education taken at the moment.  </p>
+        <div class="portrait-container">
+          <img class="portrait" src="Resources\BeachOctopus.jpeg" alt="A photo of Fernando on the beach with an octopus torso">
         </div>
-        <div class="UVM">
-          <h4>Universidad del Valle de Mexico (UVM)</h4>
-        </div>
-      </div>
-      <div class="Courses">
-        <h3>Courses / Self-taught</h3>
-        <h4>BEDU</h4>
-        <p>This is a bootcamp I started on April 24, 2021</p>
-        <h4>Codecademy</h4>
-        <p>I also started the Codecademy fullstack engineer course around the same time
-          as the BEDU course.
-        </p>
-      </div>
+      </section>
 
-    </section>
-    <section id="Projects">
+      
+      <h2>Education</h2>
+      <section class="Education">
+        <div class="formal-education">
+          <h3>University</h3>
+          <div class="universities">
+            <h4 class="titles">Universidad Tecnologica (UNITEC)</h4>
+              <p class="description">This is the most recent formal education taken at the moment.</p>
+            <h4 class="titles">Universidad del Valle de Mexico (UVM)</h4>
+              <p class="description">Studied mechatronic engineering but didn't finish last semester</p>
+          </div>
+        </div>
+        <div class="self-taught">
+          <h3>Courses / Self-taught</h3>
+            <h4 class="titles">BEDU</h4>
+              <p class="description">This is a bootcamp I started on April 24, 2021</p>
+            <h4 class="titles">Codecademy</h4>
+              <p class="description">I also started the Codecademy fullstack engineer course around the same time
+            as the BEDU course.
+              </p>
+        </div>
+      </section>
+
       <h2>Projects</h2>
-    </section>
-    <section id="Skills">
+      <section class="projects">
+        <ol>
+          <li><a href="C:\Users\fsg11\Documents\Fullstack\Cheatsheet\index.html" target="_blank">Web Development Cheatsheet</a></li>
+          <li><a href="C:\Users\fsg11\Documents\Fullstack\excursion\index.html" target="_blank">CodeCademy Excursion project</a></li>
+          <li><a href="C:\Users\fsg11\Documents\Fullstack\Pagina politica\index.html" target="_blank">Pagina Politica</a></li>
+          <li><a href="C:\Users\fsg11\Documents\Fullstack\PianoKeysCodeCademy\index.html" target="_blank">CodeCademy piano keys project</a></li>
+          <li><a href="C:\Users\fsg11\Documents\Fullstack\progressBar\index.html" target="_blank">JS Progress bar</a></li>
+        </ol>
+      </section>
+      </section>
+
       <h2>Skills</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>Native English</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>GitBash</li>
-        <li>GitHub</li>
-      </ul>
-    </section>
-  </main>
-  
-</body>
+      <div class="buttonContainer">
+        <button id="changeText">Change Text Color</button>
+        <button id="changeBackground">Change Background Color</button>
+        <button id="changeShadow">Change Shadow Color</button>
+      </div>
+      <section class="Skills">
+        <ul class="skill-list">
+          <li>HTML5</li>
+          <li>Native English</li>
+          <li>Native Spanish</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>PostGre</li>
+          <li>Mongoose</li>
+          <li>MongoDB</li>
+          <li>GitBash</li>
+          <li>GitHub</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <h2 id="contact">Contact information</h2>
+      <section class="contact" >
+        <ul class="skill-list">
+          <li>Email: </li>
+          <li>Phone number:</li>
+          <li>Github: </li>
+        </ul>
+      </section>
+    </footer>
+    
+    <script src="./Resources/script.js"></script>
+
+  </body>
 </html>
